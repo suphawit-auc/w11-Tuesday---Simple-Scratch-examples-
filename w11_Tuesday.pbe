@@ -1,0 +1,31 @@
+float x=250;
+void setup()
+{
+  size(500, 500);
+}
+void draw()
+{
+  background(0);
+  ellipse (x, 250, 100,100);
+}
+void keyPressed()
+{
+  if (key == CODED)
+  {
+    if (keyCode == LEFT)
+    {
+      if(x>0)
+      {
+      x=x-4; 
+      }
+    }
+    else if (keyCode == RIGHT)
+    {
+      if(x< width)
+      {
+      x=x+4;
+      }
+    }
+
+  }
+}
